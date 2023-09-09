@@ -1,15 +1,20 @@
-import React from 'react'
-import './App.css';
+import React from 'react';
+import './Card.css';
 import Card from './Card';
 // import ContactPage from './component/ContactPage';
-// import {dataDog} from '/Data';
+import { CoverUpData } from './Data';
 
 const App = () => {
   return (
-    <div>
-      <Card/>
+    <div className='parentBox'>
+      {CoverUpData.map((item)=>(
+        <Card
+          keyName={item.Name}
+          keyPrice={item.price}
+          keyColor={item.color}
+          keyImage={item.image}
+      />
+      ))}
     </div>
-  )
-}
-
-export default App
+)}
+export default App;

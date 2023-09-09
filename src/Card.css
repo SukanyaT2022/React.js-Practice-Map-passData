@@ -1,12 +1,21 @@
 .parentBox{
-   display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.mainBox{
+    width:25%;
+}
+img{
+    width:90%;
 }
 
-.mainBox{
- 
+
+
+/* .mainBox{ */
     /* flex define the size of each box 33.3% 
     and gap is 25% so 33.3 is 3 box each row*/
-    flex: '0 0 calc(25% - 25px)';
+    /* flex: '0 0 calc(25% - 25px)';
     height: 400px;
 }
 .targetImage{
@@ -19,7 +28,7 @@
 .text{
 width: 100%;
 background-color: lightgray;
-}
+} */
 
 /* //wrapper control each individual  box */
   /* flex define the size of each box 33.3% 

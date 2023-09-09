@@ -1,22 +1,15 @@
 import React from 'react'
 import './Card.css';
-// noneed data on this page we need datat on app.ja
-// import {dataDog} from '/Data';
-
-const Card = () => {
+const Card = ({keyName, keyPrice, keyColor, keyImage}) => {
   return (
-    <div className='parentBox'>
-    <div className='mainBox'>
-      <div className='targetImage'>
-     <img src="https://images.pexels.com/photos/2629372/pexels-photo-2629372.jpeg?auto=compress&cs=tinysrgb&w=800" />
-     </div>
-      <div className='text'>
-      <h2>Type of Pet: Dog</h2>
-      <p>Type: Chivava</p>
-      <p>Age: 2</p>
+      <div className='mainBox' >
+            <img src={keyImage} alt=""/>
+          <div className='text'>
+            <h2>Type of colthes: {keyName}</h2>
+            <p>Price: {keyPrice}</p>
+            <p>Color: {keyColor}</p>
+          </div>
       </div>
-    </div>
-    </div>
   )
 }
 
